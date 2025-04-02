@@ -1,6 +1,6 @@
 syntax = "proto3";
 package main;
-option go_package = "/protoc/gen/;mainapipb";
+option go_package = "/proto/gen/;mainapipb";
 
 service Calculate {
  rpc Add (AddRequest) returns (AddResponse);
