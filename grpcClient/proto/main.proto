@@ -1,9 +1,13 @@
 syntax = "proto3";
 package main;
+import "greeter.proto";
 option go_package = "/proto/gen/;mainapipb";
 
 service Calculate {
  rpc Add (AddRequest) returns (AddResponse);
+}
+service Greeter {
+    rpc Greet (HelloRequest) returns (HelloResponse);
 }
 message AddRequest {
    int32 a = 1;
